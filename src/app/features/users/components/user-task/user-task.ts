@@ -1,7 +1,7 @@
 import { Component, input, inject } from '@angular/core';
-import { UserTaskModel } from '../core/models/user-task.model';
-import { TaskCard } from '../shared/task-card/task-card';
-import { TaskService } from '../core/services/task.service';
+import { UserTaskModel } from '../../../../core/models/user-task.model';
+import { TaskCard } from '../../../tasks/components/task-card/task-card';
+import { TaskService } from '../../../../core/services/task.service';
 
 @Component({
   selector: 'app-user-task',

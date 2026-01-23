@@ -1,8 +1,8 @@
-import { UserTaskModel } from './../../core/models/user-task.model';
+import { UserTaskModel } from '../../../../core/models/user-task.model';
 import { Component, input } from '@angular/core';
 import { NgClass, TitleCasePipe } from '@angular/common';
-import { TruncatePipe } from '../../core/pipes/truncate.pipe';
-import { TaskDatePipe } from '../../core/pipes/task-date.pipe';
+import { TruncatePipe } from '../../../../shared/pipes/truncate.pipe';
+import { TaskDatePipe } from '../../../../shared/pipes/task-date.pipe';
 
 @Component({
   selector: 'app-task-card',

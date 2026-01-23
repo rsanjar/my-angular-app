@@ -1,4 +1,4 @@
-import { UserModel } from './app/core/models/user.model';
+import { UserModel } from '../models/user.model';
 
 export const UsersSampleData: UserModel[] = [
   {
@@ -9,7 +9,7 @@ export const UsersSampleData: UserModel[] = [
     role: 'admin',
     isActive: true,
     createdAt: '2024-01-15T09:23:00.000Z',
-    avatarUrl: '/assets/img/sabina.jpg'
+    avatarUrl: '/assets/img/sabina.jpg',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const UsersSampleData: UserModel[] = [
     role: 'user',
     isActive: true,
     createdAt: '2024-03-02T12:10:00.000Z',
-    avatarUrl: 'https://i.pravatar.cc/150?img=2'
+    avatarUrl: 'https://i.pravatar.cc/150?img=2',
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const UsersSampleData: UserModel[] = [
     role: 'user',
     isActive: false,
     createdAt: '2023-11-20T17:45:00.000Z',
-    avatarUrl: 'https://i.pravatar.cc/150?img=3'
+    avatarUrl: 'https://i.pravatar.cc/150?img=3',
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ export const UsersSampleData: UserModel[] = [
     role: 'guest',
     isActive: true,
     createdAt: '2024-06-01T08:00:00.000Z',
-    avatarUrl: 'https://i.pravatar.cc/150?img=4'
+    avatarUrl: 'https://i.pravatar.cc/150?img=4',
   },
   {
     id: 5,
@@ -49,16 +49,16 @@ export const UsersSampleData: UserModel[] = [
     role: 'user',
     isActive: true,
     createdAt: '2024-05-10T14:30:00.000Z',
-    avatarUrl: 'https://i.pravatar.cc/150?img=5'
+    avatarUrl: 'https://i.pravatar.cc/150?img=5',
   },
   {
     id: 6,
     firstName: 'Frank',
-    lastName: 'O\'Connor',
+    lastName: "O'Connor",
     email: 'frank.oconnor@example.com',
     role: 'user',
     isActive: false,
     createdAt: '2023-09-07T21:15:00.000Z',
-    avatarUrl: 'https://i.pravatar.cc/150?img=6'
-  }
+    avatarUrl: 'https://i.pravatar.cc/150?img=6',
+  },
 ];

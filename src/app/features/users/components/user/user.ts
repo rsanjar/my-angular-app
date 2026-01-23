@@ -1,5 +1,5 @@
 import { Component, input, output } from '@angular/core';
-import { UserModel } from '../core/models/user.model';
+import { UserModel } from '../../../../core/models/user.model';
 
 @Component({
   selector: 'app-user',
@@ -7,7 +7,6 @@ import { UserModel } from '../core/models/user.model';
   templateUrl: './user.html',
   styleUrl: './user.scss',
 })
-
 export class User {
   user = input.required<UserModel>();
   userSelected = output<UserModel>();

@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 import { UserTaskModel } from '../models/user-task.model';
-import { DummyUserTasks } from '../../../dummy-tasks';
+import { DummyUserTasks } from '../data/dummy-tasks';
 
 @Injectable({ providedIn: 'root' })
 export class TaskService {

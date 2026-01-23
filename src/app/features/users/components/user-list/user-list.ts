@@ -1,10 +1,10 @@
 import { Component, signal, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UserModel } from '../core/models/user.model';
+import { UserModel } from '../../../../core/models/user.model';
 import { User } from '../user/user';
 import { UserDetails } from '../user-details/user-details';
-import { UserTasks } from '../user-tasks/user-tasks';
-import { UserService } from '../core/services/user.service';
+import { UserTasks } from '../../../tasks/components/user-tasks/user-tasks';
+import { UserService } from '../../../../core/services/user.service';
 
 @Component({
   selector: 'app-user-list',

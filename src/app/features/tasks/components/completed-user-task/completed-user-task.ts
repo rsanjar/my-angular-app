@@ -1,5 +1,5 @@
-import { UserTaskModel } from './../core/models/user-task.model';
-import { TaskCard } from '../shared/task-card/task-card';
+import { UserTaskModel } from '../../../../core/models/user-task.model';
+import { TaskCard } from '../task-card/task-card';
 import { Component, input } from '@angular/core';
 
 @Component({

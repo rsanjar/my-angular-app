@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { UserModel } from '../core/models/user.model';
+import { UserModel } from '../../../../core/models/user.model';
 import { CommonModule } from '@angular/common';
 
 @Component({

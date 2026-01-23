@@ -1,8 +1,8 @@
-import { TaskService } from './../core/services/task.service';
+import { TaskService } from '../../../../core/services/task.service';
 import { Component, input, computed, signal, inject } from '@angular/core';
-import { UserTaskModel } from '../core/models/user-task.model';
-import { UserTask } from '../user-task/user-task';
-import { AddTaskModal } from '../features/components/add-task-modal/add-task-modal';
+import { UserTaskModel } from '../../../../core/models/user-task.model';
+import { UserTask } from '../../../users/components/user-task/user-task';
+import { AddTaskModal } from '../add-task-modal/add-task-modal';
 import { CompletedUserTask } from '../completed-user-task/completed-user-task';
 
 @Component({

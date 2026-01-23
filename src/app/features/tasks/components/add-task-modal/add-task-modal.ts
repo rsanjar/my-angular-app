@@ -1,8 +1,8 @@
 import { Component, output, input, inject } from '@angular/core';
 import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { type UserTaskModel } from '../../../core/models/user-task.model';
-import { TaskService } from '../../../core/services/task.service';
+import { type UserTaskModel } from '../../../../core/models/user-task.model';
+import { TaskService } from '../../../../core/services/task.service';
 
 @Component({
   selector: 'app-add-task-modal',
