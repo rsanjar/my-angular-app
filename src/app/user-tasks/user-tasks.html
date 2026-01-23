@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-12 my-3 text-center">
+    <button
+      class="btn btn-primary btn-add-task px-5"
+      (click)="toggleAddTaskModal()"
+      [disabled]="!userID()"
+    >
+      Add Task
+    </button>
+  </div>
+  @if (showAddTaskModal && userID()) {
+    <app-add-task-modal [userID]="userID()" (closed)="toggleAddTaskModal()" />
+  }
+</div>
+<div class="row">
+  <div class="col-12">
+    <h3>User Tasks</h3>
+  </div>
+  <div class="col-12">
+    @if (userTasks(); as tasks) {
+      @if (tasks.length > 0) {
+        @for (task of tasks; track task.id) {
+          <app-user-task [userTask]="task" />
+        }
+      } @else {
+        <p>No tasks found for this user.</p>
+      }
+    }
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 mt-4">
+    <h3>Completed Tasks</h3>
+
+    @if (completedTasks(); as completedTasks) {
+      @if (completedTasks.length > 0) {
+        <app-completed-user-task [completedTaskList]="completedTasks" />
+      } @else {
+        <p>No completed tasks for this user.</p>
+      }
+    }
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="user-button-item" [class.active]="selected()">
+  <button class="btn btn-secondary" type="button" (click)="onUserClick()">
+    <img [src]="user().avatarUrl" class="img-fluid rounded-5" [alt]="user().fullName" title="{{ user().email }}" />
+    <span>{{ user().fullName }}</span>
+  </button>
+</div>

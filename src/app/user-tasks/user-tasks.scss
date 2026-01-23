@@ -1,0 +1,35 @@
+app-user-task {
+  display: contents;
+}
+
+table {
+  &.task-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      background-color: #14070e;
+
+      th {
+        padding: 12px;
+        border: 1px solid #ddd;
+        color: #ffffff;
+        text-align: left;
+      }
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #5400db;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #2300bc;
+    }
+
+    td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      color: #ffffff;
+    }
+  }
+}

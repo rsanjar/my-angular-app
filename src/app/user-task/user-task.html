@@ -1,0 +1,7 @@
+@if (userTask(); as task) {
+  <app-task-card [task]="task">
+    <div>
+      <button class="btn btn-success" (click)="markAsCompleted()">Mark as Completed</button>
+    </div>
+  </app-task-card>
+}

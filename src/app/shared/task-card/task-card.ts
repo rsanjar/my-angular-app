@@ -1,0 +1,15 @@
+import { UserTaskModel } from './../../core/models/user-task.model';
+import { Component, input } from '@angular/core';
+import { NgClass, TitleCasePipe } from '@angular/common';
+import { TruncatePipe } from '../../core/pipes/truncate.pipe';
+import { TaskDatePipe } from '../../core/pipes/task-date.pipe';
+
+@Component({
+  selector: 'app-task-card',
+  imports: [NgClass, TitleCasePipe, TruncatePipe, TaskDatePipe],
+  templateUrl: './task-card.html',
+  styleUrl: './task-card.scss',
+})
+export class TaskCard {
+  task = input.required<UserTaskModel>();
+}

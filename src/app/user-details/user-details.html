@@ -1,0 +1,22 @@
+@if (currentUser(); as user) {
+  <div class="row">
+    <div class="col-12">
+      <h2>{{ user.fullName }}</h2>
+    </div>
+    <div class="col-12 col-lg-6">
+      <img
+        [src]="user.avatarUrl"
+        class="img-fluid rounded-3 mb-3"
+        [alt]="user.fullName"
+        title="{{ user.fullName }}"
+      />
+    </div>
+    <div class="col-12 col-lg-6">
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>Role:</strong> {{ user.role }}</p>
+      <p><strong>Joined:</strong> {{ user.createdAt | date: 'longDate' }}</p>
+    </div>
+  </div>
+} @else {
+  <p>Please select a user to see their details!</p>
+}

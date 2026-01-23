@@ -1,0 +1,11 @@
+<ul>
+  @for (task of completedTaskList(); track task.id) {
+    <li>
+      <app-task-card [task]="task">
+        <div>
+          <span class="badge bg-success">Completed</span>
+        </div>
+      </app-task-card>
+    </li>
+  }
+</ul>
