@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { DummyUserTasks } from '../../../../core/data/dummy-tasks';
 import { CompletedUserTask } from './completed-user-task';
 
 describe('CompletedUserTask', () => {
@@ -14,6 +15,9 @@ describe('CompletedUserTask', () => {
 
     fixture = TestBed.createComponent(CompletedUserTask);
     component = fixture.componentInstance;
+
+    const completedTasks = DummyUserTasks.filter((task) => task.isCompleted);
+    fixture.componentRef.setInput('completedTaskList', completedTasks);
     await fixture.whenStable();
   });
 

@@ -1,10 +1,11 @@
-import { Component, input, output } from '@angular/core';
+import { Component, input, output, ChangeDetectionStrategy } from '@angular/core';
 import { UserModel } from '../../../../core/models/user.model';
 
 @Component({
   selector: 'app-user',
   imports: [],
   templateUrl: './user.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './user.scss',
 })
 export class User {

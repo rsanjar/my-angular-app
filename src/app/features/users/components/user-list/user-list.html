@@ -15,9 +15,9 @@
         </ul>
       </div>
       <div class="col-9">
-        @if (selectedUser() !== null) {
-          <app-user-details [currentUser]="selectedUser()"></app-user-details>
-          <app-user-tasks [userID]="selectedUser()?.id"></app-user-tasks>
+        @if (selectedUser(); as user) {
+          <app-user-details [currentUser]="user"></app-user-details>
+          <app-user-tasks [userID]="user.id"></app-user-tasks>
         } @else {
           <div class="alert alert-info" role="alert">
             Please select a user to view details and tasks.

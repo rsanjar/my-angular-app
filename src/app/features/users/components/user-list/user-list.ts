@@ -1,4 +1,4 @@
-import { Component, signal, inject } from '@angular/core';
+import { Component, signal, inject, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserModel } from '../../../../core/models/user.model';
 import { User } from '../user/user';
@@ -10,6 +10,7 @@ import { UserService } from '../../../../core/services/user.service';
   selector: 'app-user-list',
   imports: [User, CommonModule, UserDetails, UserTasks],
   templateUrl: './user-list.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './user-list.scss',
 })
 export class UserList {

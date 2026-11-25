@@ -1,4 +1,4 @@
-import { Component, input, inject } from '@angular/core';
+import { Component, input, inject, ChangeDetectionStrategy } from '@angular/core';
 import { UserTaskModel } from '../../../../core/models/user-task.model';
 import { TaskCard } from '../../../tasks/components/task-card/task-card';
 import { TaskService } from '../../../../core/services/task.service';
@@ -7,6 +7,7 @@ import { TaskService } from '../../../../core/services/task.service';
   selector: 'app-user-task',
   imports: [TaskCard],
   templateUrl: './user-task.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './user-task.scss',
 })
 export class UserTask {

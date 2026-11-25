@@ -1,4 +1,4 @@
-import { Component, output, input, inject } from '@angular/core';
+import { Component, output, input, inject, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { type UserTaskModel } from '../../../../core/models/user-task.model';
@@ -8,6 +8,7 @@ import { TaskService } from '../../../../core/services/task.service';
   selector: 'app-add-task-modal',
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './add-task-modal.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './add-task-modal.scss',
 })
 export class AddTaskModal {

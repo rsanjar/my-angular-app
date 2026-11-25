@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { UsersSampleData } from '../../../../core/data/dummy-users';
 import { User } from './user';
 
 describe('User', () => {
@@ -14,6 +15,7 @@ describe('User', () => {
 
     fixture = TestBed.createComponent(User);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('user', UsersSampleData[0]);
     await fixture.whenStable();
   });
 

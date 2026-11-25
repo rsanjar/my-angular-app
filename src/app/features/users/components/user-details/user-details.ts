@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ChangeDetectionStrategy } from '@angular/core';
 import { UserModel } from '../../../../core/models/user.model';
 import { CommonModule } from '@angular/common';
 
@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-user-details',
   imports: [CommonModule],
   templateUrl: './user-details.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './user-details.scss',
 })
 export class UserDetails {

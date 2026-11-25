@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { DummyUserTasks } from '../../../../core/data/dummy-tasks';
 import { UserTask } from './user-task';
 
 describe('UserTask', () => {
@@ -14,6 +15,7 @@ describe('UserTask', () => {
 
     fixture = TestBed.createComponent(UserTask);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('userTask', DummyUserTasks[0]);
     await fixture.whenStable();
   });
 

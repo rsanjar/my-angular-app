@@ -35,6 +35,24 @@ module.exports = defineConfig([
     },
   },
   {
+    files: [
+      'src/app/app.ts',
+      'src/app/features/tasks/components/add-task-modal/add-task-modal.ts',
+      'src/app/features/tasks/components/completed-user-task/completed-user-task.ts',
+      'src/app/features/tasks/components/task-card/task-card.ts',
+      'src/app/features/tasks/components/user-tasks/user-tasks.ts',
+      'src/app/features/users/components/user-details/user-details.ts',
+      'src/app/features/users/components/user-list/user-list.ts',
+      'src/app/features/users/components/user-task/user-task.ts',
+      'src/app/features/users/components/user/user.ts',
+      'src/app/layout/header/header.ts',
+    ],
+    rules: {
+      // Angular's v22 migration sets Eager to preserve these components' change detection.
+      '@angular-eslint/prefer-on-push-component-change-detection': 'off',
+    },
+  },
+  {
     files: ['**/*.html'],
     extends: [angular.configs.templateRecommended, angular.configs.templateAccessibility],
     rules: {
